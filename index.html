@@ -1,0 +1,80 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4A2F24"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="description" content="Portafolio de Kiz Photography: fotografía social y de retratos en Ciudad de Panamá."><title>Kiz Photography · Portafolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500&display=swap">
+<style>
+:root{--bg:#F7F2EA;--card:#fff;--ink:#2A211C;--mute:#6b5a50;--brown:#7A5240;--gold:#9A7432;--line:#E4D8C6;--cta:#7A5240;--ctaink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1612;--card:#271e19;--ink:#f1e8dc;--mute:#bfae9f;--brown:#d9b49c;--gold:#d8b46a;--line:#3a2d25;--cta:#d9b49c;--ctaink:#1d1612}}
+:root[data-theme="dark"]{--bg:#1d1612;--card:#271e19;--ink:#f1e8dc;--mute:#bfae9f;--brown:#d9b49c;--gold:#d8b46a;--line:#3a2d25;--cta:#d9b49c;--ctaink:#1d1612}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px);scroll-behavior:smooth}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:300 16px/1.7 'Poppins',system-ui,sans-serif}
+h1,h2,h3,.brand{font-family:'Lora',Georgia,serif;font-weight:400}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:20px;padding:12px 20px}
+.brand{font-style:italic;font-size:22px;margin-right:auto;color:var(--ink);text-decoration:none}
+nav a{color:var(--mute);text-decoration:none;font-size:14px}nav a:hover{color:var(--ink)}
+nav .links{display:flex;gap:18px;overflow-x:auto;white-space:nowrap}
+.btn{display:inline-block;background:var(--cta);color:var(--ctaink);padding:10px 20px;border-radius:999px;text-decoration:none;font-weight:500;font-size:14px}
+nav .btn{color:var(--ctaink)}
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;background:#222 center 35%/cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(20,12,8,.8),rgba(20,12,8,.1) 60%)}
+.hero div{position:relative;z-index:1;padding:0 6vw 9vh;max-width:760px}
+.hero h1{font-size:clamp(40px,8vw,84px);line-height:1.02}
+.hero p{margin:14px 0 22px;font-size:17px;max-width:46ch}
+.hero .btn{background:#fff;color:#2A211C}
+main{max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:72px 0 8px}
+h2{font-size:clamp(28px,4.5vw,42px);line-height:1.15}
+.lead{color:var(--mute);margin:8px 0 26px;max-width:56ch}
+.gal{columns:3 260px;column-gap:14px}
+.gal img{width:100%;height:auto;display:block;margin:0 0 14px;break-inside:avoid;border-radius:3px;background:var(--line)}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:8px}
+.pk{background:var(--card);border:1px solid var(--line);padding:26px 26px 14px;border-radius:3px}
+.pk .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.pk h3{font-size:26px}.price{font-family:'Lora',serif;font-size:32px;color:var(--brown);line-height:1}
+.price small{display:block;font:400 12px 'Poppins',sans-serif;color:var(--mute);margin-top:4px;text-align:right}
+.pk ul{list-style:none;margin-top:16px;padding:0}.pk li{padding:10px 0;border-top:1px solid var(--line);font-size:15px}
+h3.grp{font-size:20px;margin:30px 0 4px;color:var(--brown);font-style:italic}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:26px;margin-top:20px;padding:0;list-style:none}
+.steps li{counter-increment:s}.steps li::before{content:counter(s);font:italic 40px 'Lora',serif;color:var(--gold);display:block;line-height:1}
+.steps b{display:block;font-weight:500;margin:6px 0 2px}.steps span{color:var(--mute);font-size:15px}
+.pay{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.pay span{border:1px solid var(--line);padding:6px 16px;border-radius:999px;font-size:14px}
+footer{margin-top:90px;background:#4A2F24;color:#f4ece1;text-align:center;padding:64px 20px calc(48px + env(safe-area-inset-bottom,0px))}
+footer .brand{font-size:44px;display:block;color:#fff}footer p{margin:6px 0}footer a{color:#f4ece1}
+footer .btn{background:#fff;color:#4A2F24;margin:22px 0 10px}
+@media(max-width:640px){nav .links{display:none}section{padding-top:56px}}
+</style></head><body>
+<nav><a class="brand" href="#top">Kiz Photography</a>
+<div class="links"><a href="#exterior">Exterior</a><a href="#estudio">Estudio</a><a href="#familia">Familia</a><a href="#paquetes">Paquetes</a></div>
+<a class="btn" href="#contacto">Reservar</a></nav>
+<header class="hero" id="top" style="background-image:url(hero.jpg)"><div>
+<h1>Fotografía social y de retratos en Panamá</h1>
+<p>Sesiones en exteriores y en estudio para que te veas y te sientas tú. Portafolio de Katerine Zambrano.</p>
+<a class="btn" href="#paquetes">Ver paquetes</a></div></header>
+<main>
+<section id="exterior"><h2>Exterior</h2><p class="lead">Parques, Casco Antiguo, Amador y playitas: la ciudad de Panamá como escenario.</p><div class="gal"><img src="exterior-1.jpg" width="1040" height="1300" alt="Sesión en exteriores" loading="lazy"><img src="exterior-2.jpg" width="1048" height="1300" alt="Sesión en exteriores" loading="lazy"><img src="exterior-3.jpg" width="1040" height="1300" alt="Sesión en exteriores" loading="lazy"><img src="exterior-4.jpg" width="1040" height="1300" alt="Sesión en exteriores" loading="lazy"><img src="exterior-5.jpg" width="977" height="1300" alt="Sesión en exteriores" loading="lazy"><img src="exterior-6.jpg" width="1040" height="1300" alt="Sesión en exteriores" loading="lazy"><img src="exterior-7.jpg" width="1040" height="1300" alt="Sesión en exteriores" loading="lazy"><img src="exterior-8.jpg" width="800" height="1200" alt="Sesión en exteriores" loading="lazy"><img src="exterior-9.jpg" width="1232" height="1300" alt="Sesión en exteriores" loading="lazy"></div></section><section id="ceremonias"><h2>Ceremonias</h2><p class="lead">Los momentos que se viven una sola vez, contados con calma.</p><div class="gal"><img src="ceremonias-1.jpg" width="1300" height="1040" alt="Fotografía de bautizo" loading="lazy"><img src="ceremonias-2.jpg" width="1269" height="1300" alt="Fotografía de bautizo" loading="lazy"><img src="ceremonias-3.jpg" width="976" height="1300" alt="Fotografía de bautizo" loading="lazy"></div></section><section id="familia"><h2>Familia y niños</h2><p class="lead">Cariño, juego y complicidad frente a la cámara.</p><div class="gal"><img src="familia-1.jpg" width="1040" height="1300" alt="Sesión de familia en estudio" loading="lazy"><img src="familia-2.jpg" width="976" height="1300" alt="Sesión de familia en estudio" loading="lazy"><img src="familia-3.jpg" width="1039" height="1300" alt="Sesión de familia en estudio" loading="lazy"><img src="familia-4.jpg" width="866" height="1300" alt="Sesión de familia en estudio" loading="lazy"><img src="familia-5.jpg" width="867" height="1300" alt="Sesión de familia en estudio" loading="lazy"></div></section><section id="estudio"><h2>Retrato en estudio</h2><p class="lead">Fondos, luz controlada y tiempo para que te veas como eres.</p><div class="gal"><img src="estudio-1.jpg" width="976" height="1300" alt="Retrato en estudio" loading="lazy"><img src="estudio-2.jpg" width="865" height="1300" alt="Retrato en estudio" loading="lazy"><img src="estudio-3.jpg" width="1040" height="1300" alt="Retrato en estudio" loading="lazy"><img src="estudio-4.jpg" width="1040" height="1300" alt="Retrato en estudio" loading="lazy"><img src="estudio-5.jpg" width="819" height="1230" alt="Retrato en estudio" loading="lazy"><img src="estudio-6.jpg" width="1040" height="1300" alt="Retrato en estudio" loading="lazy"><img src="estudio-7.jpg" width="1040" height="1300" alt="Retrato en estudio" loading="lazy"><img src="estudio-8.jpg" width="731" height="1300" alt="Retrato en estudio" loading="lazy"><img src="estudio-9.jpg" width="869" height="1159" alt="Retrato en estudio" loading="lazy"></div></section><section id="estilo"><h2>Sesión de estilo</h2><p class="lead">Una camisa, una silla y mucha naturalidad.</p><div class="gal"><img src="estilo-1.jpg" width="1300" height="1040" alt="Sesión de estilo" loading="lazy"><img src="estilo-2.jpg" width="1040" height="1300" alt="Sesión de estilo" loading="lazy"><img src="estilo-3.jpg" width="1040" height="1300" alt="Sesión de estilo" loading="lazy"></div></section><section id="aventura"><h2>Aventura y momentos</h2><p class="lead">Verano, agua y calle: fotos con movimiento.</p><div class="gal"><img src="aventura-1.jpg" width="867" height="1300" alt="Fotografía de aventura" loading="lazy"><img src="aventura-2.jpg" width="827" height="1300" alt="Fotografía de aventura" loading="lazy"><img src="aventura-3.jpg" width="731" height="1300" alt="Fotografía de aventura" loading="lazy"><img src="aventura-4.jpg" width="1040" height="1300" alt="Fotografía de aventura" loading="lazy"></div></section>
+<section id="paquetes"><h2>Paquetes</h2><p class="lead">Elige el que mejor se adapte a ti. Si lo que buscas no está incluido, armamos una atención personalizada.</p>
+<h3 class="grp">Exterior · parques, Casco, Amador, playitas y más</h3><div class="pgrid"><article class="pk"><div class="top"><h3>Exterior</h3><p class="price">$25<small>precio Early Bird</small></p></div><ul><li>5 fotos editadas en alta resolución</li><li>15 fotos de prueba</li><li>1 cambio de vestimenta (la trae el cliente)</li><li>Hasta 3 personas en la foto</li><li>30 minutos de sesión</li></ul></article><article class="pk"><div class="top"><h3>Exterior +</h3><p class="price">$45<small>precio Early Bird</small></p></div><ul><li>10 fotos editadas en alta resolución</li><li>25 fotos de prueba</li><li>2 cambios de vestimenta (los trae el cliente)</li><li>Hasta 5 personas en la foto</li><li>45 minutos de sesión</li></ul></article></div>
+<h3 class="grp">Estudio · estudio de la localidad</h3><div class="pgrid"><article class="pk"><div class="top"><h3>Estudio</h3><p class="price">$45<small>precio Early Bird</small></p></div><ul><li>10 fotos editadas en alta resolución</li><li>25 fotos de prueba</li><li>1 cambio de vestimenta (la trae el cliente)</li><li>Hasta 3 personas en la foto</li><li>45 minutos de sesión</li></ul></article><article class="pk"><div class="top"><h3>Estudio +</h3><p class="price">$65<small>precio Early Bird</small></p></div><ul><li>15 fotos editadas en alta resolución</li><li>Todas las fotos de prueba</li><li>2 cambios de vestimenta (los trae el cliente)</li><li>Hasta 5 personas en la foto</li><li>1 hora de sesión</li></ul></article></div></section>
+<section id="como"><h2>¿Cómo funciona?</h2>
+<ol class="steps"><li><b>Elige</b><span>Escoge tu paquete o cuéntanos qué necesitas.</span></li>
+<li><b>Separa</b><span>Reserva tu fecha con un abono del 30% del total de la sesión.</span></li>
+<li><b>Detalles</b><span>Nos reunimos por videollamada o en persona para afinar tu sesión.</span></li>
+<li><b>Recibe tus fotos</b><span>Se entregan al finalizar la edición y el pago total.</span></li></ol>
+<h3 class="grp">Formas de pago</h3><div class="pay"><span>Yappy</span><span>Efectivo</span><span>Transferencia bancaria</span></div>
+<p class="lead">Los datos para la transferencia te los enviamos al momento de reservar.</p></section>
+</main>
+<footer id="contacto"><span class="brand">Kiz Photography</span><p>Reserva tu sesión · Ciudad de Panamá</p>
+<a class="btn" href="tel:+50764128828">Llamar +507 6412-8828</a>
+<p><a href="mailto:Kizphotography@icloud.com">Kizphotography@icloud.com</a></p>
+<p><a href="https://kizphotoweb.my.canva.site/contacto">kizphotoweb.my.canva.site/contacto</a></p></footer>
+<div id="lb" hidden><button aria-label="Cerrar">&times;</button><img alt=""></div>
+<style>#lb{position:fixed;inset:0;z-index:20;background:rgba(10,6,4,.94);display:flex;align-items:center;justify-content:center;padding:calc(env(safe-area-inset-top,0px) + 16px) 16px calc(env(safe-area-inset-bottom,0px) + 16px)}#lb[hidden]{display:none}#lb img{max-width:100%;max-height:100%;object-fit:contain}#lb button{position:absolute;right:18px;top:calc(env(safe-area-inset-top,0px) + 10px);background:none;border:0;color:#fff;font-size:42px;line-height:1;cursor:pointer}.gal img{cursor:zoom-in}</style>
+<script>
+const lb=document.getElementById('lb'),li=lb.querySelector('img');
+document.querySelectorAll('.gal img').forEach(i=>i.addEventListener('click',()=>{li.src=i.src;li.alt=i.alt;lb.hidden=false}));
+lb.addEventListener('click',()=>lb.hidden=true);addEventListener('keydown',e=>{if(e.key==='Escape')lb.hidden=true});
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+</script></body></html>

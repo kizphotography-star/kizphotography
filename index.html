@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kiz Photography</title>
 <meta name="description" content="Fotografía social y de retratos en la Ciudad de Panamá. Sesiones en exteriores y en estudio.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#333333">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Kiz Photo">
 <link rel="icon" type="image/png" href="img/firma-oscura.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -63,16 +68,13 @@ figure img:focus-visible{outline:2px solid #876227;outline-offset:4px}
 .wa-float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(43,37,34,.28);text-decoration:none;transition:transform .25s ease}
 .wa-float:hover{transform:scale(1.07);text-decoration:none}
 .wa-float:focus-visible{outline:2px solid #876227;outline-offset:3px}
-.ig-float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(max(16px,env(safe-area-inset-bottom,0px)) + 70px);z-index:40;width:58px;height:58px;border-radius:50%;background:#333;padding:0;border:0;overflow:hidden;box-shadow:0 6px 18px rgba(43,37,34,.3);text-decoration:none;transition:transform .25s ease;display:block}
-.ig-float img{display:block;width:100%;height:100%;object-fit:cover}
+.ig-float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(max(16px,env(safe-area-inset-bottom,0px)) + 70px);z-index:40;width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 30% 107%,#FDD16A 0%,#F58529 25%,#DD2A7B 50%,#8134AF 75%,#515BD4 100%);color:#fff;display:grid;place-items:center;padding:0;border:0;overflow:hidden;box-shadow:0 6px 18px rgba(43,37,34,.3);text-decoration:none;transition:transform .25s ease;display:block}
 .ig-float:hover{transform:scale(1.07);text-decoration:none}
 .ig-float:focus-visible{outline:2px solid #876227;outline-offset:3px}
 .ig-bubble{position:fixed;right:calc(max(16px,env(safe-area-inset-right,0px)) + 72px);bottom:calc(max(16px,env(safe-area-inset-bottom,0px)) + 97px);z-index:40;background:#F7F2EA;color:#3B2620;font-size:13px;letter-spacing:.04em;white-space:nowrap;padding:10px 16px;box-shadow:0 6px 18px rgba(43,37,34,.2);pointer-events:none;animation:igb 4s ease both}
 .ig-bubble::after{content:"";position:absolute;right:-6px;top:50%;margin-top:-6px;border:6px solid transparent;border-right:0;border-left-color:#F7F2EA}
 @keyframes igb{0%{opacity:0;transform:translateY(8px)}8%{opacity:1;transform:none}85%{opacity:1;transform:none}100%{opacity:0;visibility:hidden}}
 @media (prefers-reduced-motion:reduce){.ig-bubble{animation:igb 4s linear both}}
-.ig-float:hover{transform:scale(1.07);text-decoration:none}
-.ig-float:focus-visible{outline:2px solid #876227;outline-offset:3px}
 </style>
 <style>
 .cmp{position:relative;overflow:hidden;aspect-ratio:4/5;max-width:520px;margin:0 auto;user-select:none;--p:50%;background:#2B2522}
@@ -523,7 +525,7 @@ figure img:focus-visible{outline:2px solid #876227;outline-offset:4px}
 
 </div>
 <div class="ig-bubble" aria-hidden="true">Sígueme en Instagram</div>
-<a class="ig-float" href="https://www.instagram.com/kiz_photographypty/" target="_blank" rel="noopener" aria-label="Síguenos en Instagram"><img src="img/logo-kiz.png" width="256" height="256" alt=""></a>
+<a class="ig-float" href="https://www.instagram.com/kiz_photographypty/" target="_blank" rel="noopener" aria-label="Síguenos en Instagram"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.8" fill="currentColor"/></svg></a>
 <a class="wa-float" href="https://wa.me/50764128828" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.8c.3 2.6 2.6 4.9 5.2 5.2l1.2-1.3-1.8-1-.9.5c-.8-.4-1.5-1.1-1.9-1.9l.5-.9-1-1.8z"/></svg></a>
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
 <button class="p" aria-label="Foto anterior">&#8249;</button>

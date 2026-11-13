@@ -535,14 +535,21 @@ figure img:focus-visible{outline:2px solid #876227;outline-offset:4px}
     nodes.forEach(function (n) {
       if (!n.nodeValue) return;
       var frag = document.createDocumentFragment();
-      Array.prototype.forEach.call(n.nodeValue, function (ch) {
-        var s = document.createElement('span');
-        s.className = 'ch';
-        s.setAttribute('aria-hidden', 'true');
-        s.textContent = ch === ' ' ? '\u00a0' : ch;
-        s.style.animationDelay = (k * 25) + 'ms';
-        k++;
-        frag.appendChild(s);
+      n.nodeValue.split(/(\s+)/).forEach(function (part) {
+        if (!part) return;
+        if (/^\s+$/.test(part)) { frag.appendChild(document.createTextNode(' ')); return; }
+        var w = document.createElement('span');
+        w.style.whiteSpace = 'nowrap';
+        Array.prototype.forEach.call(part, function (ch) {
+          var s = document.createElement('span');
+          s.className = 'ch';
+          s.setAttribute('aria-hidden', 'true');
+          s.textContent = ch;
+          s.style.animationDelay = (k * 25) + 'ms';
+          k++;
+          w.appendChild(s);
+        });
+        frag.appendChild(w);
       });
       n.parentNode.replaceChild(frag, n);
     });

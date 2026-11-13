@@ -60,6 +60,9 @@ figure img:focus-visible{outline:2px solid #876227;outline-offset:4px}
 .lb .n{right:12px;top:50%;transform:translateY(-50%)}
 .lb .c{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#E6DAC8;font-size:13px;letter-spacing:.12em}
 @media (prefers-reduced-motion: reduce){.ch{animation:none;transition:none}.ch:hover{transform:none}}
+.wa-float{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:max(16px,env(safe-area-inset-bottom,0px));z-index:40;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 6px 18px rgba(43,37,34,.28);text-decoration:none;transition:transform .25s ease}
+.wa-float:hover{transform:scale(1.07);text-decoration:none}
+.wa-float:focus-visible{outline:2px solid #876227;outline-offset:3px}
 </style>
 <style>
 .cmp{position:relative;overflow:hidden;aspect-ratio:4/5;max-width:520px;margin:0 auto;user-select:none;--p:50%;background:#2B2522}
@@ -509,6 +512,7 @@ figure img:focus-visible{outline:2px solid #876227;outline-offset:4px}
   </div>
 
 </div>
+<a class="wa-float" href="https://wa.me/50764128828" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.5 20.5l1.3-4.3A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.8c.3 2.6 2.6 4.9 5.2 5.2l1.2-1.3-1.8-1-.9.5c-.8-.4-1.5-1.1-1.9-1.9l.5-.9-1-1.8z"/></svg></a>
 <div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
 <button class="p" aria-label="Foto anterior">&#8249;</button>
 <img id="lbimg" alt="">

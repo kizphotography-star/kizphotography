@@ -1,22 +1,22 @@
-# Kiz Photography · Portafolio
+# Kiz Photography
 
-App web independiente (instalable en el celular) con el portafolio de **Kiz Photography**, fotografía social y de retratos en Ciudad de Panamá.
+Página web del portafolio de Kiz Photography. Es un sitio estático: no necesita instalar nada.
 
-- Galerías por sección con visor de foto a pantalla completa
-- Paquetes, precios, cómo funciona y formas de pago
-- Contacto directo: llamada, correo y web
-- Funciona sin conexión una vez abierta (PWA)
+## Archivos
 
-## Cómo verla
-Abre `index.html` en el navegador, o publícala gratis con **GitHub Pages**:
-1. En el repositorio ve a **Settings → Pages**.
-2. En *Source* elige **Deploy from a branch**, rama `main`, carpeta `/ (root)`.
-3. En un par de minutos tendrás el enlace `https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/`.
+- `index.html`: la página completa (diseño, pestañas y animaciones).
+- `img/`: todas las fotos y la firma.
+- `.nojekyll`: evita que GitHub Pages procese el sitio con Jekyll.
 
-## Cómo editarla
-- **Textos y precios:** busca el texto en `index.html` y cámbialo.
-- **Fotos:** reemplaza los archivos de la misma carpeta (mismo nombre) o agrega nuevas dentro de la galería.
-- Si cambias archivos, sube la versión en `sw.js` (`kiz-v1` → `kiz-v2`) para que el celular actualice la copia guardada.
+## Publicarla con GitHub Pages
 
-## Nota de privacidad
-Por ser un repositorio que puede ser público, esta versión **no incluye** el número de cuenta bancaria; los datos de transferencia se envían al reservar.
+1. Crea un repositorio nuevo en GitHub (por ejemplo `kiz-photography`).
+2. Sube `index.html`, la carpeta `img` y el archivo `.nojekyll` a la raíz del repositorio.
+3. Ve a **Settings → Pages**.
+4. En **Build and deployment**, elige **Deploy from a branch**, selecciona la rama `main` y la carpeta `/ (root)`, y guarda.
+5. Después de uno o dos minutos, la página queda en `https://TU-USUARIO.github.io/kiz-photography/`.
+
+## Cambiar algo
+
+- Para cambiar una foto, reemplaza el archivo con el mismo nombre dentro de `img/`.
+- Para cambiar textos, precios, teléfono o enlaces, edita `index.html` con cualquier editor de texto.
